@@ -6,6 +6,7 @@ import FruitsDiscount from '../FruitsDiscount/FruitsDiscount';
 import Header from '../Header/Header';
 import Products from '../Products/Products';
 import Services from '../Services/Services';
+import Subscribe from '../Subscribe/Subscribe';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Services></Services>
             <FruitsDiscount></FruitsDiscount>
             <Category></Category>
+            <Subscribe></Subscribe>
         </div>
     );
 };

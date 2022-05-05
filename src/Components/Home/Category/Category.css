@@ -1,0 +1,24 @@
+.category-title {
+    text-align: center;
+    color: rgb(12, 51, 12);
+    text-decoration: overline;
+}
+
+.category-container {
+    background-color: rgb(238, 240, 243);
+    padding: 10px;
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.category-container img {
+    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+
+}
