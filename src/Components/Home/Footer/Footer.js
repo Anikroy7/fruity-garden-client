@@ -1,11 +1,16 @@
 import React from 'react';
 import './Footer.css'
-import googlePlay from '../../../images/play-store/5a902dbf7f96951c82922875 (1).png.crdownload'
+import googlePlay from '../../../images/play-store/goolellll.png'
 import applePlay from '../../../images/play-store/25-253876_app-store-and-google-play-with-your-own.png'
+import facebook from '../../../images/play-store/facebook.png'
+import twitter from '../../../images/play-store/instagram.png'
+import instagram from '../../../images/play-store/twitter.png'
+import footerIcon from '../../../images/footer-icon/footer.jpg'
+
 const Footer = () => {
     return (
         <section>
-
+            <hr className='mb-5 ' />
             <section className=' footer-main-container'>
                 <section className='row p-5'>
                     <div className='col-sm-6 col-md-4 col-lg-3 footer-detail-container'>
@@ -48,11 +53,27 @@ const Footer = () => {
             </section>
 
 
-            <section>
-                <div className='social-login-icon'>
-                    <img src={applePlay} alt="" />
-                    <img src={googlePlay} alt="" />
+            <section className='mt-5 row me-5 p-5'>
+                <div className='col-sm-12 col-md-6 col-lg-5 copyright-container'>
+
+                    <span className='ms-3'>Terms of service</span>
+                    <span className='ms-3'>Privacy</span>
+                    <span className='ms-3'>Cookies</span>
+                    <p className='ms-5 mt-2'>
+                        &copy; Fruity Garden 2022
+                    </p>
+
                 </div>
+                <div className='social-login-container col-sm-12 col-md-6 col-lg-7 text-end '>
+                    <img id='apple-img' className=' ms-2' src={applePlay} alt="" />
+                    <img id='google-img' src={googlePlay} alt="" />
+                    <span className='social-login-icon ms-4 '>
+                        <img src={facebook} alt="" />
+                        <img src={twitter} alt="" />
+                        <img src={instagram} alt="" />
+                    </span>
+                </div>
+
             </section>
         </section>
     );
