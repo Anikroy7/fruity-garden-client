@@ -1,0 +1,11 @@
+.fruits-container {
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+
+.fruits-container p {
+    color: rgb(71, 2, 2);
+    font-weight: 500;
+}

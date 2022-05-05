@@ -1,0 +1,10 @@
+.product {
+    margin: 10px;
+    background-color: rgb(235, 233, 233);
+    padding: 10px;
+}
+
+.image-container img {
+    height: 100px;
+    width: 100px;
+}

@@ -1,8 +1,7 @@
-.carousel-item img {
-    height: 500px;
-    width: 20%;
+/* ---------------------------
+styles for banner section 
+------------------------------*/
 
-}
 
 .banner-title h1 {
     font-size: 55px;
@@ -24,19 +23,19 @@
     margin-top: 30px;
 }
 
-.banner-title button {
+.shop-button {
     background-color: rgb(93, 161, 93);
     border: none;
     padding: 10px;
     padding-left: 35px;
     padding-right: 35px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     color: aliceblue;
     font-weight: 500;
 }
 
-.banner-title button:hover {
+.shop-button:hover {
     background-color: rgb(7, 63, 7);
     transition: 2s;
 }
