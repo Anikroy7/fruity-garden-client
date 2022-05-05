@@ -1,0 +1,21 @@
+.footer-main-container {
+    background-color: rgb(228, 245, 239);
+    padding: 30px;
+
+}
+
+.footer-main-container h6 {
+    font-size: 20px;
+    color: rgb(4, 54, 58);
+    margin-bottom: 29px;
+}
+
+.footer-main-container p {
+    color: rgb(43, 20, 63);
+    font-family: Times, Georgia, 'Times New Roman', serif;
+}
+
+.footer-main-container p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

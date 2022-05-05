@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import BeautyCare from '../BeautyCare/BeautyCare';
 import Category from '../Category/Category';
+import Footer from '../Footer/Footer';
 import FruitsDiscount from '../FruitsDiscount/FruitsDiscount';
 import Header from '../Header/Header';
 import Products from '../Products/Products';
@@ -19,6 +20,7 @@ const Home = () => {
             <FruitsDiscount></FruitsDiscount>
             <Category></Category>
             <Subscribe></Subscribe>
+            <Footer></Footer>
         </div>
     );
 };
