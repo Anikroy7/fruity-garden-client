@@ -1,0 +1,18 @@
+.social-login {
+    color: rgb(17, 17, 44);
+    font-weight: 500;
+}
+
+.social-login img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    background: rgb(183, 223, 166);
+    border-radius: 50%;
+}
+
+.social-login img:hover {
+    background: rgb(115, 150, 100);
+    cursor: pointer;
+
+}

@@ -1,12 +1,29 @@
 .login-main-container {
     background-color: rgb(255, 255, 255);
     padding-top: 50px;
-    padding: 20px;
+    margin: 10px;
+
+}
+
+.back-btn a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(77, 158, 88);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 1px;
+
+}
+
+.back-btn a:hover {
+    color: aliceblue;
+    background-color: rgb(22, 94, 13);
 }
 
 .login-container {
     background-color: rgb(237, 240, 243);
-    margin-left: 50p;
+
+
 }
 
 .login-title {
@@ -32,23 +49,4 @@
 #login-btn:hover {
     background-color: green;
     transition: 1s;
-}
-
-.social-login {
-    color: rgb(17, 17, 44);
-    font-weight: 500;
-}
-
-.social-login img {
-    height: 40px;
-    width: 40px;
-    margin-left: 10px;
-    background: rgb(183, 223, 166);
-    border-radius: 50%;
-}
-
-.social-login img:hover {
-    background: rgb(115, 150, 100);
-    cursor: pointer;
-
 }
