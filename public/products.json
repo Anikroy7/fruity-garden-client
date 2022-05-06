@@ -1,0 +1,52 @@
+[
+    {
+        "_id": "627272cdc9028721f52cd476",
+        "name": "Tostios medium,Salsa con",
+        "price": 6.52,
+        "quantity": 35,
+        "description": "real test of a tost that can give you a relax time",
+        "supplier": "Toti-tos",
+        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
+        "discount": 50
+    },
+    {
+        "_id": "627272cdc9028721f52cd474",
+        "name": "Tostios medium,Salsa con",
+        "price": 6.52,
+        "quantity": 35,
+        "description": "real test of a tost that can give you a relax time",
+        "supplier": "Toti-tos",
+        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
+        "discount": 50
+    },
+    {
+        "_id": "627272cdc9028721f52cd472",
+        "name": "Deluxe Whole,Salted ",
+        "price": 8.8,
+        "quantity": 16,
+        "description": "This is mixed up by tested salt",
+        "supplier": "Up-crop",
+        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
+        "discount": 50
+    },
+    {
+        "_id": "627272cdc9028721f52cd477",
+        "name": "Baked snaked,Cheese Crakers",
+        "price": 9.85,
+        "quantity": 21,
+        "description": "use different kind of chesees of make this ",
+        "supplier": "Cheez_It",
+        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
+        "discount": 50
+    },
+    {
+        "_id": "627288c3c9028721f53f6680",
+        "name": "Tostios medium,Salsa con",
+        "price": 6.52,
+        "quantity": 35,
+        "description": "real test of a tost that can give you a relax time",
+        "supplier": "Toti-tos",
+        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
+        "discount": 50
+    }
+]

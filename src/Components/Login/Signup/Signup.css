@@ -1,5 +1,5 @@
 .signup-container {
-    background-color: rgb(236, 221, 221);
+    background-color: rgb(221, 236, 227);
     margin-top: 100px;
     padding: 30px;
     text-align: center;
@@ -30,6 +30,7 @@
 }
 
 #signup-btn input:hover {
-    background-color: rgb(87, 17, 17);
+    background-color: rgb(17, 87, 46);
     transition: 1s;
+    border-radius: 20px;
 }

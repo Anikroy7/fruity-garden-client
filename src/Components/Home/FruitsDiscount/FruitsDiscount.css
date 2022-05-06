@@ -1,11 +1,13 @@
 .fruits-container {
-    border: 1px solid black;
     padding: 10px;
-
 }
 
+.fruits-container h5 {
+    color: rgb(43, 1, 1);
+}
 
 .fruits-container p {
-    color: rgb(71, 2, 2);
+    color: rgb(19, 4, 66);
     font-weight: 500;
+    font-size: 35px;
 }

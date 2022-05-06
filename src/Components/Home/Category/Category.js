@@ -5,6 +5,12 @@ import grain from '../../../images/category/grain.png'
 import milk from '../../../images/category/milk.png'
 import mop from '../../../images/category/mop.png'
 import paste from '../../../images/category/tooth-paste.png'
+import crockery from '../../../images/category/icons8-crockery-64.png'
+import snacks from '../../../images/category/icons8-snack-64.png'
+import care from '../../../images/category/icons8-mother-room-64.png'
+import oils from '../../../images/category/icons8-essential-oils-64.png'
+import vegetable from '../../../images/category/icons8-vegetable-64.png'
+
 
 const Category = () => {
     return (
@@ -13,8 +19,8 @@ const Category = () => {
             <div className='row g-2'>
                 <div className='category-container col-sm-2 col-md-4 col-lg-2 '>
                     <img className='mb-5' src={fruits} alt="" />
-                    <h6>Fruits &</h6>
-                    <h6> vegitable</h6>
+                    <h6>Fresh &&</h6>
+                    <h6> Fruits</h6>
                 </div>
                 <div className='category-container col-sm-2 col-md-4 col-lg-2'>
                     <img className='mb-5' src={milk} alt="" />
@@ -37,29 +43,29 @@ const Category = () => {
                     <h6>Household</h6>
                 </div>
                 <div className='category-container col-sm-2 col-md-4 col-lg-2'>
-                    <img className='mb-5' src={fruits} alt="" />
-                    <h6>Fruits &</h6>
-                    <h6> vegitable</h6>
+                    <img className='mb-5' src={crockery} alt="" />
+                    <h6>Crockery &</h6>
+                    <h6> Cutlery</h6>
+                </div>
+                <div className='category-container col-sm-2 col-md-4 col-lg-2'>
+                    <img className='mb-5' src={snacks} alt="" />
+                    <h6>Snacks &</h6>
+                    <h6> Branded Foods</h6>
+                </div>
+                <div className='category-container col-sm-2 col-md-4 col-lg-2'>
+                    <img className='mb-5' src={care} alt="" />
+                    <h6>Baby care &</h6>
+                    <h6> Accsessories</h6>
+                </div>
+                <div className='category-container col-sm-2 col-md-4 col-lg-2'>
+                    <img className='mb-5' src={oils} alt="" />
+                    <h6>Essentials &</h6>
+                    <h6> oils</h6>
                 </div>
                 <div className='category-container col-sm-2 col-md-4 col-lg-2'>
                     <img className='mb-5' src={fruits} alt="" />
-                    <h6>Fruits &</h6>
-                    <h6> vegitable</h6>
-                </div>
-                <div className='category-container col-sm-2 col-md-4 col-lg-2'>
-                    <img className='mb-5' src={fruits} alt="" />
-                    <h6>Fruits &</h6>
-                    <h6> vegitable</h6>
-                </div>
-                <div className='category-container col-sm-2 col-md-4 col-lg-2'>
-                    <img className='mb-5' src={fruits} alt="" />
-                    <h6>Fruits &</h6>
-                    <h6> vegitable</h6>
-                </div>
-                <div className='category-container col-sm-2 col-md-4 col-lg-2'>
-                    <img className='mb-5' src={fruits} alt="" />
-                    <h6>Fruits &</h6>
-                    <h6> vegitable</h6>
+                    <h6>Fresh Fresh &</h6>
+                    <h6> Fruits</h6>
                 </div>
             </div>
 
