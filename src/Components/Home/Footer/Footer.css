@@ -22,6 +22,34 @@
 
 
 /* social login icon style */
+
+.footer-offer {
+    background-color: rgb(235, 172, 36);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+
+}
+
+@keyframes example {
+    from {
+        background-color: rgb(235, 172, 36);
+    }
+
+    to {
+        background-color: rgb(150, 105, 53);
+    }
+}
+
 .copyright-container span {
     color: rgb(58, 25, 65);
     font-weight: 500;
@@ -43,10 +71,12 @@
 #apple-img {
     height: 70px;
     width: 150px;
-    margin-right: 10px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 #google-img {
-    width: 140px;
+    width: 145px;
     height: 50px;
+    cursor: pointer;
 }

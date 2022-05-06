@@ -15,7 +15,7 @@ const Products = () => {
 
         <section className='mt-5'>
             <h1 className='text-center'>Our Products </h1>
-            <div className="products-container">
+            <div className="products-container ">
 
                 {
                     products.map(product => <Productdetail

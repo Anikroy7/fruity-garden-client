@@ -5,7 +5,7 @@ import banner1 from '../../../images/banner/banner1.jpeg'
 const Banner = () => {
     return (
 
-        <section className='d-flex' style={{ backgroundImage: `url(${banner1})`, height: '550px' }}>
+        <section className='d-flex' style={{ backgroundImage: `url(${banner1})`, height: '520px' }}>
             <div className='p-5 banner-title'>
                 <h6>ALL NATURAL PRODUCTS</h6>
                 <h1>Fresh And Healthy</h1>

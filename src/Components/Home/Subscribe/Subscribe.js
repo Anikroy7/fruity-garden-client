@@ -21,7 +21,7 @@ const Subscribe = () => {
                     />
                     <Button variant="outline-success">Subscribe</Button>
                 </Form>
-                <hr />
+
             </div>
             <hr className='mt-5' />
         </section>
