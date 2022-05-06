@@ -21,7 +21,7 @@ const SocialLogin = () => {
 
     return (
 
-        <div className='social-login mt-5 ms-5'>
+        <div className='social-login mt-5'>
             <p className='row'>
                 <span className='col-sm-12 mb-4'>
                     or login with
