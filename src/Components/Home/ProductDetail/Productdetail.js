@@ -15,6 +15,7 @@ const Productdetail = ({ product }) => {
             <div className='image-container'>
                 <img src={img} alt="" />
             </div>
+            <button>Update</button>
         </section>
     );
 };
