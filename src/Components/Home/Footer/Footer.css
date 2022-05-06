@@ -37,6 +37,7 @@
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: 10;
+    cursor: pointer;
 
 }
 
@@ -46,7 +47,7 @@
     }
 
     to {
-        background-color: rgb(150, 105, 53);
+        background-color: rgb(236, 142, 119);
     }
 }
 
