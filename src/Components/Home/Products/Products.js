@@ -10,15 +10,18 @@ const Products = () => {
         fetch('https://calm-anchorage-95986.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, []);
+    const neededProducts = products.slice(0, 6)
     return (
 
         <section className='mt-5'>
             <h1 className='products-title'>Top Saver Today !!</h1>
             <div className="products-container ">
 
+
+
                 {
-                    products.map(product => <Productdetail
+                    neededProducts.map(product => <Productdetail
 
                         key={product._id}
                         product={product}

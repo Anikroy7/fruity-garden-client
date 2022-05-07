@@ -25,7 +25,7 @@
 }
 
 .product-detail button {
-    background-color: rgba(0, 128, 0, 0.856);
+    background-color: rgba(24, 150, 24, 0.705);
     color: #ffff;
     border: none;
     padding: 5px;
@@ -34,7 +34,7 @@
 }
 
 .price {
-    color: rgba(0, 128, 0, 0.815);
+    color: rgba(28, 160, 28, 0.747);
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
