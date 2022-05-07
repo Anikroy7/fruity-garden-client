@@ -1,13 +1,20 @@
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ProductDetail.css';
 
 
 
 const Productdetail = ({ product }) => {
 
-    const { name, price, description, ratings, img, quantity, supplier, discount } = product;
+    const { name, price, description, ratings, img, quantity, supplier, discount, _id } = product;
+    const navigate = useNavigate()
+    const handelStockManage = id => {
+        navigate(`inventory/${id}`)
+        console.log(id);
+    }
+
     return (
         <section className='product'>
             <div className='shadow-sm mb-5 bg-body rounded border product-detail'>
@@ -24,9 +31,9 @@ const Productdetail = ({ product }) => {
 
                     <img src={img} alt="" />
                 </div>
-                <button className='update-button rounded'>
+                <button onClick={() => handelStockManage(_id)} className='update-button rounded'>
 
-                    Add To Stock<FontAwesomeIcon className='ms-2' icon={faShoppingCart}></FontAwesomeIcon></button>
+                    Stock Manage<FontAwesomeIcon className='ms-2' icon={faShoppingCart}></FontAwesomeIcon></button>
             </div>
         </section>
     );
