@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginImage from '../../../images/login/Computer login-bro.svg'
 import './Login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,8 +20,10 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const navigate = useNavigate()
+    const location = useLocation()
+    let from = location.state?.from?.pathname || "/";
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
 
     useEffect(() => {

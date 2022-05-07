@@ -5,6 +5,8 @@ import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login/Login';
 import Signup from './Components/Login/Signup/Signup';
 import NotFound from './Components/NotFound/NotFound';
+import Inventory from './Components/Inventory/Inventory';
+import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
 
 
 function App() {
@@ -17,6 +19,11 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
+        <Route path='/inventory/:id' element={
+          <RequireAuth>
+            <Inventory></Inventory>
+          </RequireAuth>
+        }></Route>
       </Routes>
     </div>
   );

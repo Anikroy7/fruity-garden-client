@@ -6,13 +6,15 @@ import facebook from '../../../images/social-login/icons8-facebook-48.png'
 import github from '../../../images/social-login/icons8-github-64.png'
 import twitter from '../../../images/social-login/twitter.png'
 import auth from '../../../firebase.init';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
 
     const handelGooleLogIn = () => {
