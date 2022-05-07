@@ -14,7 +14,7 @@ const Products = () => {
     return (
 
         <section className='mt-5'>
-            <h1 className='text-center'>Our Products </h1>
+            <h1 className='products-title'>Top Saver Today !!</h1>
             <div className="products-container ">
 
                 {

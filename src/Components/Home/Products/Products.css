@@ -5,6 +5,12 @@
     grid-gap: 10px;
 }
 
+.products-title {
+    color: rgb(10, 77, 54);
+    margin-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 @media screen and (max-width:576px) {
     .products-container {
         display: grid;

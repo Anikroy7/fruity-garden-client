@@ -36,18 +36,18 @@
     margin-left: 40px;
     animation-name: example;
     animation-duration: 4s;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
     cursor: pointer;
 
 }
 
 @keyframes example {
     from {
-        background-color: rgb(235, 172, 36);
+        background-color: rgb(36, 235, 112);
     }
 
     to {
-        background-color: rgb(236, 142, 119);
+        background-color: rgb(33, 83, 3);
     }
 }
 
@@ -63,6 +63,9 @@
 
 }
 
+.social-login-main-container {
+    background-color: rgb(245, 244, 245);
+}
 
 .social-login-icon img {
     height: 40px;

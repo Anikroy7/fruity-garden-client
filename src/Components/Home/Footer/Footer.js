@@ -9,6 +9,9 @@ import instagram from '../../../images/play-store/twitter.png'
 const Footer = () => {
     return (
         <section>
+            <p className='footer-offer w-25 mx-auto mb-5'>
+                Get 10% Off Today!!
+            </p>
             <hr className='mb-5 ' />
             <section className=' footer-main-container'>
                 <section className='row p-5'>
@@ -51,10 +54,9 @@ const Footer = () => {
                 </section>
             </section>
 
-            <p className='footer-offer'>
-                Get 10% Off Today!!
-            </p>
-            <section className='mt-5 row me-5 p-5'>
+
+            <section className='row p-5 social-login-main-container'>
+
                 <div className='col-sm-12 col-md-6 col-lg-5 copyright-container mt-2'>
 
                     <span className='ms-3'>Terms of service</span>

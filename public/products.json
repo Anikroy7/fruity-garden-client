@@ -1,52 +1,124 @@
 [
     {
-        "_id": "627272cdc9028721f52cd476",
         "name": "Tostios medium,Salsa con",
         "price": 6.52,
         "quantity": 35,
-        "description": "real test of a tost that can give you a relax time",
+        "description": "Real test of a tost that can give you a relax time",
         "supplier": "Toti-tos",
         "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
-        "discount": 50
+        "discount": 50,
+        "ratings": "✡✡✡✡✡"
     },
     {
         "_id": "627272cdc9028721f52cd474",
-        "name": "Tostios medium,Salsa con",
+        "name": "Green Guava, Spicy",
         "price": 6.52,
-        "quantity": 35,
-        "description": "real test of a tost that can give you a relax time",
-        "supplier": "Toti-tos",
-        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
-        "discount": 50
+        "quantity": 30,
+        "description": "Food made with the green guava and also using fresh environment",
+        "supplier": "Chezze It",
+        "img": "https://i.ibb.co/sVQFbb5/guava.jpg",
+        "discount": 30,
+        "ratings": "✡✡✡✡✡"
     },
     {
         "_id": "627272cdc9028721f52cd472",
-        "name": "Deluxe Whole,Salted ",
+        "name": "Lay's photato. Chips ",
         "price": 8.8,
         "quantity": 16,
-        "description": "This is mixed up by tested salt",
+        "description": "This is mixed up by tested salt and spicy masala thats make nice",
         "supplier": "Up-crop",
-        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
-        "discount": 50
+        "img": "https://i.ibb.co/Vp4tLfm/tropicana.jpg",
+        "discount": 20,
+        "ratings": "✡✡✡✡✡"
     },
     {
-        "_id": "627272cdc9028721f52cd477",
         "name": "Baked snaked,Cheese Crakers",
         "price": 9.85,
         "quantity": 21,
-        "description": "use different kind of chesees of make this ",
+        "description": "use different kind of chesees of make this products.",
         "supplier": "Cheez_It",
-        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
-        "discount": 50
+        "img": "https://i.ibb.co/KskdFb4/chezzeit.jpg",
+        "discount": 50,
+        "ratings": "✡✡✡✡✡"
     },
     {
-        "_id": "627288c3c9028721f53f6680",
-        "name": "Tostios medium,Salsa con",
-        "price": 6.52,
-        "quantity": 35,
-        "description": "real test of a tost that can give you a relax time",
+        "name": "Craft Chezze,Speread",
+        "price": 5.69,
+        "quantity": 23,
+        "description": "This is real milky chezze with a jar.you can get this.",
+        "supplier": "Chedder speread",
+        "img": "https://i.ibb.co/k9qRfVB/craft.jpg",
+        "discount": 36,
+        "ratings": "✡✡✡✡"
+    },
+    {
+        "name": "Marcaroni Chezze",
+        "price": 9.5,
+        "quantity": 54,
+        "description": "Marcaroni brands chezze altime best",
+        "supplier": "Craft Break",
+        "img": "https://i.ibb.co/F86xp89/macaroni.jpg",
+        "discount": 25,
+        "ratings": "✡✡✡✡"
+    },
+    {
+        "name": "Fruit-museli",
+        "price": 3.26,
+        "quantity": 33,
+        "description": "It has a best fruity flavour,that make hungry",
+        "supplier": "Vitala",
+        "img": "https://i.ibb.co/Pg5FmD4/muesli.jpg",
+        "discount": 34,
+        "ratings": "✡✡✡✡✡"
+    },
+    {
+        "name": "Sual Pot",
+        "price": 6.54,
+        "quantity": 33,
+        "description": "Made by the natural milk with fruity flavour",
+        "supplier": "LoL Brands",
+        "img": "https://i.ibb.co/9YpRTjb/nut.jpg",
+        "discount": 31,
+        "ratings": "✡✡✡✡✡"
+    },
+    {
+        "name": "Sterategi Oil",
+        "price": 34,
+        "quantity": 22,
+        "description": "Olive oil is best for long hair and also good health",
+        "supplier": "Oil Agency",
+        "img": "https://i.ibb.co/F7jdXK7/skincare.jpg",
+        "discount": 61,
+        "ratings": "✡✡✡✡"
+    },
+    {
+        "name": "Stobery pet",
+        "price": 2.34,
+        "quantity": 31,
+        "description": "pet can eat this very comfortly by using their nail",
+        "supplier": "X- Yee Brands",
+        "img": "https://i.ibb.co/ScnBtYJ/stwbery.jpg",
+        "discount": 13,
+        "ratings": "✡✡✡✡✡"
+    },
+    {
+        "name": "Chunki Calsa",
+        "price": 6.35,
+        "quantity": 41,
+        "description": "Defferent kinds of fruits are use for made this",
         "supplier": "Toti-tos",
-        "img": "https://m.media-amazon.com/images/I/61r0oHP-f3L._SL1100_.jpg",
-        "discount": 50
+        "img": "https://i.ibb.co/xFN2Dk6/tostitos.jpg",
+        "discount": 32,
+        "ratings": "✡✡✡✡✡"
+    },
+    {
+        "name": "Veggie Wash",
+        "price": 3.97,
+        "quantity": 44,
+        "description": "Cleans fruits and vegetables are use for making this products",
+        "supplier": "Green Dragon's",
+        "img": "https://i.ibb.co/k4Df49Z/veggie-wash.jpg",
+        "discount": 34,
+        "ratings": "✡✡✡✡✡"
     }
 ]
