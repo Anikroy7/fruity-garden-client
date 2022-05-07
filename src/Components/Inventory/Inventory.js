@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import React, { useEffect, useRef, useState } from 'react';
+import { Alert, Button, Card, Form, FormControl, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Inventory = () => {
     const { id } = useParams();
@@ -11,7 +12,7 @@ const Inventory = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [product])
-    console.log(product);
+
     const handelDelivered = () => {
         let quantity = product.quantity;
         quantity = quantity - 1;
@@ -27,11 +28,30 @@ const Inventory = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                console.log('clicked');
+                if (data.modifiedCount === 1) {
+                    toast('Your order is delivered');
+                    console.log('fffft');
+                }
+
             })
 
     }
+
+
+    // handel add to stock
+
+    const handelAddToStock = event => {
+        event.preventDefault()
+        const number = event.target.number.value;
+        if (number > 0) {
+            console.log('ok');
+        }
+        else {
+            alert('please give positive value')
+        }
+    }
+
+
 
     return (
         <section className='d-flex justify-content-center' >
@@ -50,8 +70,21 @@ const Inventory = () => {
                 </ListGroup>
 
                 <Button onClick={handelDelivered} className='w-100' variant="outline-success">Deleiverd</Button>
+                <h4 className='mt-5'>Add To Stock</h4>
 
+
+                <Form onSubmit={handelAddToStock} className="d-flex">
+                    <FormControl
+                        type="number"
+                        placeholder="Add to stock"
+                        name='number'
+                        className="me-2"
+                        aria-label="Search"
+                    />
+                    <Button type='submit' variant="outline-success">Add</Button>
+                </Form>
             </Card>
+
         </section>
     );
 };
