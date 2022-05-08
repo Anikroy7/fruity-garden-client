@@ -18,8 +18,6 @@ const Products = () => {
             <h1 className='products-title'>Top Saver Today !!</h1>
             <div className="products-container ">
 
-
-
                 {
                     neededProducts.map(product => <Productdetail
 

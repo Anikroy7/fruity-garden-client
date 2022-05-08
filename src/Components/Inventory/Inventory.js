@@ -12,7 +12,7 @@ const Inventory = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [product])
-
+    console.log(product);
     const handelDelivered = () => {
         let quantity = product.quantity;
         quantity = quantity - 1;
@@ -30,7 +30,7 @@ const Inventory = () => {
             .then(data => {
                 if (data.modifiedCount === 1) {
                     toast('Your order is delivered');
-                    console.log('fffft');
+                    return
                 }
 
             })
@@ -42,9 +42,31 @@ const Inventory = () => {
 
     const handelAddToStock = event => {
         event.preventDefault()
-        const number = event.target.number.value;
-        if (number > 0) {
-            console.log('ok');
+        const InputNumber = event.target.number.value;
+        if (InputNumber > 0) {
+            let quantity = product.quantity;
+            let number = parseInt(InputNumber)
+            let newQuantity = quantity + number;
+            product.quantity = newQuantity;
+            console.log(product);
+
+
+            const url = `http://localhost:5000/product`
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Content-type': 'application/json',
+                },
+                body: JSON.stringify(product),
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.modifiedCount === 1) {
+                        toast('Your Stock is added');
+                        console.log('fffft');
+                    }
+
+                })
         }
         else {
             alert('please give positive value')
@@ -74,12 +96,12 @@ const Inventory = () => {
 
 
                 <Form onSubmit={handelAddToStock} className="d-flex">
-                    <FormControl
+                    <input
                         type="number"
                         placeholder="Add to stock"
                         name='number'
                         className="me-2"
-                        aria-label="Search"
+
                     />
                     <Button type='submit' variant="outline-success">Add</Button>
                 </Form>
