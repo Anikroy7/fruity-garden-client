@@ -55,9 +55,9 @@ const Login = () => {
             .then(data => {
                 console.log(data)
                 localStorage.setItem('Token', data.token)
-
+                navigate(from, { replace: true });
             })
-        navigate(from, { replace: true });
+
 
     }
 
@@ -74,7 +74,7 @@ const Login = () => {
         <section className='login-main-container row '>
 
             <div className='back-btn text-center mb-5'>
-                <FontAwesomeIcon className='me-2' icon={faArrowLeft}></FontAwesomeIcon> <Link to={'/'}>back to home </Link>
+                <FontAwesomeIcon className='me-2' icon={faArrowLeft}></FontAwesomeIcon> <Link to={'/'}>B\ack to home </Link>
             </div>
             <div className='col-sm-12 col-md-6 col-lg-5'>
                 <img src={loginImage} alt="" />

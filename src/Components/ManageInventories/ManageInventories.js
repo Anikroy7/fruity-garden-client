@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import AllInventoriesDetail from '../AllInvetoriesDetail/AllInventoriesDetail';
 import useProducts from '../hooks/useProducts';
 
 const ManageInventories = () => {
     const [products, setProducts] = useProducts();
-    // useEffect(() => {
-    //     fetch('https://calm-anchorage-95986.herokuapp.com/product')
-    //         .then(res => res.json())
-    //         .then(data => setProducts(data))
-    // }, [])
-    // console.log(products);
+    const navigate = useNavigate();
+    const hadelAddProduct = () => {
+        navigate('/additem')
+    }
 
     return (
         <section className='mt-5'>
@@ -23,6 +22,10 @@ const ManageInventories = () => {
                         product={product}
                     ></AllInventoriesDetail>)
                 }
+            </div>
+            <div className='w-100 text-center'>
+
+                <button onClick={hadelAddProduct} className='bg-success border-0 p-2'>Add To Stock</button>
             </div>
         </section>
     );
