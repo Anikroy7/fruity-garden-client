@@ -17,6 +17,7 @@ const Login = () => {
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(
         auth
     );
+    const [token, setToken] = useState('');
     const [loginErrorMessage, setLoginErrorMessage] = useState('');
     const [
         signInWithEmailAndPassword,
@@ -28,9 +29,7 @@ const Login = () => {
     const navigate = useNavigate()
     const location = useLocation()
     let from = location.state?.from?.pathname || "/";
-    if (user) {
-        navigate(from, { replace: true });
-    }
+
 
     useEffect(() => {
         if (error) {
@@ -45,6 +44,20 @@ const Login = () => {
         const password = event.target.password.value;
         console.log(email, password);
         signInWithEmailAndPassword(email, password)
+        fetch('http://localhost:5000/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email }),
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                localStorage.setItem('Token', data.token)
+
+                navigate(from, { replace: true });
+            })
 
     }
 
@@ -52,6 +65,8 @@ const Login = () => {
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
         toast('reset email send')
+
+
     }
 
 

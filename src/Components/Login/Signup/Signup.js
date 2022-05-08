@@ -6,13 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import { Spinner } from 'react-bootstrap';
 
 
 const Signup = () => {
-
-
     const [
         createUserWithEmailAndPassword,
         user,
@@ -60,6 +59,12 @@ const Signup = () => {
             </div>
             <div className='signup-container w-50 mx-auto P-5'>
                 <h1 className='text-center signup-title'>Create Account</h1>
+                {
+
+                    loading && <Spinner animation="border" variant="success" />
+
+
+                }
                 <form onSubmit={handelCreateUser}>
                     <div className='bg-white mb-3' >
                         <FontAwesomeIcon className='me-3' icon={faUser}></FontAwesomeIcon>
