@@ -46,12 +46,18 @@ const Header = () => {
                                     <button onClick={handelLogOut} className='mx-2 rounded bg-black text-white'>Log out</button>
                                     <Link to={'/inventories'}>Manage All</Link>
                                     <Link to={'/additem'}>Add Item</Link>
+                                    <Link to={'/myitem'}>My Item</Link>
                                 </div>
-                                : <Link className='mx-2' to={'/login'}>Login</Link>
+                                :
+                                <div>
+
+                                    <Link className='mx-2' to={'/login'}>Login</Link> <Link className='mt-0' to={'/signup'}>Signup</Link>
+                                </div>
+
                         }
 
 
-                        <Link className='mt-0' to={'/signup'}>Signup</Link>
+
                     </Nav>
 
                 </Navbar.Collapse>
