@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginImage from '../../../images/login/Computer login-bro.svg'
 import './Login.css'
@@ -6,12 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { Spinner } from 'react-bootstrap';
+import { toast } from 'react-toastify';
+
 
 
 const Login = () => {
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(
+        auth
+    );
     const [loginErrorMessage, setLoginErrorMessage] = useState('');
     const [
         signInWithEmailAndPassword,
@@ -19,6 +24,7 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const emailRef = useRef('')
     const navigate = useNavigate()
     const location = useLocation()
     let from = location.state?.from?.pathname || "/";
@@ -42,6 +48,13 @@ const Login = () => {
 
     }
 
+    const handelResetPassword = async () => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        toast('reset email send')
+    }
+
+
     return (
         <section className='login-main-container row '>
 
@@ -64,7 +77,7 @@ const Login = () => {
                     <h3 className='login-title text-center'>Log In</h3><br />
                     <div className='bg-white px-3 py-2'>
                         <FontAwesomeIcon className='me-3' icon={faUser}></FontAwesomeIcon>
-                        <input type="text" name="email" id="email" placeholder='Your Email' required />
+                        <input ref={emailRef} type="text" name="email" id="email" placeholder='Your Email' required />
                     </div>
                     <br />
                     <div className='bg-white px-3 py-2 mb-4'>
@@ -72,7 +85,7 @@ const Login = () => {
                         <input type="password" name="password" id="password" placeholder='Your pasword' required /><br />
                     </div>
                     <div>
-                        <p>Forgot Password? Reset Password</p>
+                        <p>Forgot Password? <span onClick={handelResetPassword} className='reset-password'>Reset Password</span></p>
                     </div>
                     <div className='text-center  sing-up'>
                         <p>

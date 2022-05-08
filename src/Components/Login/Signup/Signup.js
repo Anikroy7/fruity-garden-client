@@ -3,19 +3,22 @@ import './Signup.css'
 import signup from '../../../images/signup/signup2.webp'
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faLeftRight, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+
+
 const Signup = () => {
+
 
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [errorMessage, setErrorMessage] = useState('');
 
     const navigate = useNavigate()
@@ -26,7 +29,7 @@ const Signup = () => {
     useEffect(() => {
         if (error) {
             console.log("error");
-            setErrorMessage(error.message)
+            setErrorMessage(error?.message)
         }
     }, [user])
 
@@ -46,8 +49,6 @@ const Signup = () => {
         }
 
     }
-
-
 
 
 

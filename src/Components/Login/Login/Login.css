@@ -55,3 +55,13 @@
 .social-container {
     background-color: rgb(233, 241, 222);
 }
+
+.reset-password {
+    color: rgb(73, 165, 42);
+}
+
+.reset-password:hover {
+    color: rgb(5, 88, 5);
+    cursor: pointer;
+
+}
