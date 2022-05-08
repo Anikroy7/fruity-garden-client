@@ -8,7 +8,7 @@ const MyItems = () => {
     console.log(myItems);
     useEffect(() => {
 
-        fetch(`http://localhost:5000/product?email=${user.email}`, {
+        fetch(`calm-anchorage-95986.herokuapp.com/product?email=${user.email}`, {
             headers: {
                 authorization: `bearer ${localStorage.getItem('Token')}`
             }

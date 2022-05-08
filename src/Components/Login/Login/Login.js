@@ -44,7 +44,7 @@ const Login = () => {
         const password = event.target.password.value;
         console.log(email, password);
         signInWithEmailAndPassword(email, password)
-        fetch('http://localhost:5000/login', {
+        fetch('calm-anchorage-95986.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
