@@ -55,7 +55,7 @@ const Signup = () => {
     return (
         <section style={{ backgroundImage: `url(${signup})`, height: '850px', opacity: '' }}>
             <div className='back-btn text-center mb-2'>
-                <FontAwesomeIcon className='mt-5 text-white' icon={faArrowLeft}></FontAwesomeIcon> <Link to={'/'}>back to home </Link>
+                <FontAwesomeIcon className='mt-5 text-white' icon={faArrowLeft}></FontAwesomeIcon> <Link to={'/'}>Back to home </Link>
             </div>
             <div className='signup-container w-50 mx-auto P-5'>
                 <h1 className='text-center signup-title'>Create Account</h1>
