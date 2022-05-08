@@ -8,7 +8,7 @@ const Inventory = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://calm-anchorage-95986.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [product])
@@ -18,7 +18,7 @@ const Inventory = () => {
         quantity = quantity - 1;
         product.quantity = quantity;
 
-        const url = `http://localhost:5000/product`
+        const url = `https://calm-anchorage-95986.herokuapp.com/product`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -42,16 +42,16 @@ const Inventory = () => {
 
     const handelAddToStock = event => {
         event.preventDefault()
-        const InputNumber = event.target.number.value;
-        if (InputNumber > 0) {
+        const inputNumber = event.target.number.value;
+        if (inputNumber > 0) {
             let quantity = product.quantity;
-            let number = parseInt(InputNumber)
+            let number = parseInt(inputNumber)
             let newQuantity = quantity + number;
             product.quantity = newQuantity;
             console.log(product);
 
 
-            const url = `http://localhost:5000/product`
+            const url = `https://calm-anchorage-95986.herokuapp.com/product`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -63,7 +63,7 @@ const Inventory = () => {
                 .then(data => {
                     if (data.modifiedCount === 1) {
                         toast('Your Stock is added');
-                        console.log('fffft');
+                        event.target.reset();
                     }
 
                 })

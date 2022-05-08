@@ -9,6 +9,9 @@ import Signup from './Components/Login/Signup/Signup';
 import NotFound from './Components/NotFound/NotFound';
 import Inventory from './Components/Inventory/Inventory';
 import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
+import ManageInventories from './Components/ManageInventories/ManageInventories';
+import AllInventoriesDetail from './Components/AllInvetoriesDetail/AllInventoriesDetail';
+import AddItem from './Components/AddItem/AddItem';
 
 
 function App() {
@@ -26,6 +29,17 @@ function App() {
             <Inventory></Inventory>
           </RequireAuth>
         }></Route>
+        <Route path='/inventories' element={
+          <RequireAuth>
+            <ManageInventories></ManageInventories>
+          </RequireAuth>
+        }></Route>
+        <Route path='/additem' element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+
       </Routes>
       <ToastContainer></ToastContainer>
     </div>

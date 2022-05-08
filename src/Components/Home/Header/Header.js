@@ -41,11 +41,17 @@ const Header = () => {
 
                     <Nav className='ms-5 me-5 header-link'>
                         {
-                            user ? <button onClick={handelLogOut} className='mx-2 rounded bg-black text-white'>Log out</button> : <Link className='mx-2' to={'/login'}>Login</Link>
+                            user ?
+                                <div>
+                                    <button onClick={handelLogOut} className='mx-2 rounded bg-black text-white'>Log out</button>
+                                    <Link to={'/inventories'}>Manage All</Link>
+                                    <Link to={'/additem'}>Add Item</Link>
+                                </div>
+                                : <Link className='mx-2' to={'/login'}>Login</Link>
                         }
 
 
-                        <Link to={'/signup'}>Signup</Link>
+                        <Link className='mt-0' to={'/signup'}>Signup</Link>
                     </Nav>
 
                 </Navbar.Collapse>
