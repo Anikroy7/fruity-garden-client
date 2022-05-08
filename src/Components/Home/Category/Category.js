@@ -9,7 +9,7 @@ import crockery from '../../../images/category/icons8-crockery-64.png'
 import snacks from '../../../images/category/icons8-snack-64.png'
 import care from '../../../images/category/icons8-mother-room-64.png'
 import oils from '../../../images/category/icons8-essential-oils-64.png'
-import vegetable from '../../../images/category/icons8-vegetable-64.png'
+
 
 
 const Category = () => {

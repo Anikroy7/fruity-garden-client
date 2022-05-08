@@ -21,12 +21,3 @@ const auth = getAuth(app)
 
 export default auth;
 
-/* 
-
-apiKey: "AIzaSyCnRt2CgoJq8FMdHCSB05tRbSd_07gZCOI",
-    authDomain: "fruity-garden.firebaseapp.com",
-    projectId: "fruity-garden",
-    storageBucket: "fruity-garden.appspot.com",
-    messagingSenderId: "477774963495",
-    appId: "1:477774963495:web:57ca679f7cc22c60393f02"
-*/

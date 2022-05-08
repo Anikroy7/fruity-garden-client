@@ -13,6 +13,7 @@ import ManageInventories from './Components/ManageInventories/ManageInventories'
 import AllInventoriesDetail from './Components/AllInvetoriesDetail/AllInventoriesDetail';
 import AddItem from './Components/AddItem/AddItem';
 import MyItems from './Components/MyItems/MyItems';
+import Blogs from './Components/Blogs/Blogs';
 
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
             <MyItems></MyItems>
           </RequireAuth>
         }></Route>
-
+        <Route path='/blogs' element={<Blogs></Blogs>}> </Route>
       </Routes>
       <ToastContainer></ToastContainer>
     </div>

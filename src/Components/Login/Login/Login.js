@@ -56,8 +56,8 @@ const Login = () => {
                 console.log(data)
                 localStorage.setItem('Token', data.token)
 
-                navigate(from, { replace: true });
             })
+        navigate(from, { replace: true });
 
     }
 
