@@ -28,7 +28,7 @@ const AddItem = () => {
 
     return (
         <div className='w-50 mx-auto'>
-            <h1 className='text-center mb-5 me-5'>Add To Stock</h1>
+            <h1 className='text-center mb-5 me-5'>Add product To Stock</h1>
             <form className='d-flex-flex-column w-50 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder='product name' className='mb-2' {...register("name", { required: true, maxLength: 20 })} /> <br />
                 <input className='mb-2' value={user.email} readOnly placeholder='Your email' {...register("email")} /> <br />
