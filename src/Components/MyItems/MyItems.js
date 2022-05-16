@@ -14,7 +14,7 @@ const MyItems = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/product`)
+        fetch(`https://calm-anchorage-95986.herokuapp.com/product`)
             .then(res => res.json())
             .then(data => {
                 setAllItems(data);

@@ -11,7 +11,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        fetch(`http://localhost:5000/product`, {
+        fetch(`https://calm-anchorage-95986.herokuapp.com/product`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
