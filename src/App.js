@@ -14,12 +14,14 @@ import AllInventoriesDetail from './Components/AllInvetoriesDetail/AllInventorie
 import AddItem from './Components/AddItem/AddItem';
 import MyItems from './Components/MyItems/MyItems';
 import Blogs from './Components/Blogs/Blogs';
+import Header from './Components/Home/Header/Header';
+import Footer from './Components/Home/Footer/Footer';
 
 
 function App() {
   return (
     <div>
-
+      <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
@@ -48,6 +50,7 @@ function App() {
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}> </Route>
       </Routes>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
   );

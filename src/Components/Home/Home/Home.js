@@ -12,7 +12,7 @@ import Subscribe from '../Subscribe/Subscribe';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+
             <Banner></Banner>
             <Products></Products>
             <BeautyCare></BeautyCare>
@@ -20,7 +20,7 @@ const Home = () => {
             <FruitsDiscount></FruitsDiscount>
             <Category></Category>
             <Subscribe></Subscribe>
-            <Footer></Footer>
+
         </div>
     );
 };

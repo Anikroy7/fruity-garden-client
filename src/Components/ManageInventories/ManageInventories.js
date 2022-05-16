@@ -4,7 +4,7 @@ import AllInventoriesDetail from '../AllInvetoriesDetail/AllInventoriesDetail';
 import useProducts from '../hooks/useProducts';
 
 const ManageInventories = () => {
-    const [products, setProducts] = useProducts();
+    const [products] = useProducts();
     const navigate = useNavigate();
     const hadelAddProduct = () => {
         navigate('/additem')

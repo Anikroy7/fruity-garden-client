@@ -11,7 +11,7 @@ const Productdetail = ({ product }) => {
     const { name, price, description, ratings, img, quantity, supplier, discount, _id } = product;
     const navigate = useNavigate()
     const handelStockManage = id => {
-        navigate(`inventory/${id}`)
+        navigate(`/inventory/${id}`)
         console.log(id);
     }
 

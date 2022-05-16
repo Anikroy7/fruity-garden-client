@@ -1,6 +1,7 @@
 import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { toast } from 'react-toastify';
 import useProducts from '../hooks/useProducts';
 
 const AllInventoriesDetail = ({ product }) => {
@@ -10,23 +11,24 @@ const AllInventoriesDetail = ({ product }) => {
     const [products, setProducts] = useProducts();
 
     const handelDelete = (id) => {
-        const url = `https://calm-anchorage-95986.herokuapp.com/product/${id}`
+        const procced = window.confirm('Your item will be deleted??')
+        if (procced) {
+            const url = `https://calm-anchorage-95986.herokuapp.com/product/${id}`
 
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount > 0) {
-                    const procced = window.confirm('Are you want to delete')
-                    if (procced) {
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+
                         const remaining = products.filter(pd => pd._id !== id)
                         console.log(remaining);
                         setProducts(remaining)
+                        toast('Your ietm is deleted')
                     }
-                }
-            })
-
+                })
+        }
     }
 
     return (

@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#"><h1 className='header-title'>Fruity Garden</h1></Navbar.Brand>
+                <Navbar.Brand href="/home"><h1 className='header-title'>Fruity Garden</h1></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
