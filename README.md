@@ -1,13 +1,8 @@
 # FRUITY GARDEN
 
-<<<<<<< HEAD
- Live site link (client):https://fruity-garden.web.app/
- 
-=======
- Live site link (client): https://fruity-garden.web.app/
->>>>>>> e7959382a157c5360544431110e9bdfe2d158f1e
- Live site link (server):https://calm-anchorage-95986.herokuapp.com/
 
+ Live site link for (client):https://fruity-garden.web.app/
+ 
 
 ## How should use this website??
 
